@@ -49,10 +49,6 @@
 
 	"use strict";
 	
-	// @author: Thomas Thompson
-	// @github: tomtom28
-	// @comment: HW for Week 19 - NY Time Article Search with ReactJS!
-	
 	
 	// Include the Main React Dependencies
 	var React = __webpack_require__(/*! react */ 1);
@@ -22091,8 +22087,20 @@
 	        React.createElement(
 	          "h1",
 	          { className: "text-center" },
-	          React.createElement("img", { style: { width: "70%" }, src: "img/nyt-header.svg", alt: "The New York Times" })
-	        ),
+						React.createElement(
+							"h1",
+							{ className: "text-center", style: { marginTop: "-12px" } },
+							React.createElement(
+								"b",
+								null,
+								React.createElement(
+									"i",
+									null,
+									"NYT Scrapper"
+								)
+							)
+						),
+					),
 	        React.createElement(
 	          "h2",
 	          { className: "text-center", style: { marginTop: "-12px" } },
@@ -22102,14 +22110,14 @@
 	            React.createElement(
 	              "i",
 	              null,
-	              "A React Rendition"
+	              "Using React and MongoDB"
 	            )
 	          )
 	        ),
 	        React.createElement(
 	          "h4",
 	          { className: "text-center" },
-	          "Search for and annotate articles of interest. Click on headlines to learn more."
+	          "Search for NYT Articles and Save Them for Later Reading!"
 	        )
 	      ),
 	      React.createElement(Query, { _setSearchFeilds: this._setSearchFeilds }),
